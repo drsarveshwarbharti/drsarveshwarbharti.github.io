@@ -53,7 +53,7 @@ function animateProgress() {
     const progressFill = document.getElementById('progressFill');
     const progressPercentage = document.querySelector('.progress-percentage');
     let progress = 0;
-    const targetProgress = 65; // Set desired progress percentage
+    const targetProgress = 37; // Set desired progress percentage
     const duration = 2000; // Animation duration in ms
     const increment = targetProgress / (duration / 16); // 60fps
 
