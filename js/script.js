@@ -4,7 +4,7 @@
 function startCountdown() {
     // Set target date (adjust this to your desired date)
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7); // 7 days from now
+    targetDate.setDate(targetDate.getDate() + 10); // 10 days from now
     targetDate.setHours(0, 0, 0, 0);
 
     const daysElement = document.getElementById('days');
