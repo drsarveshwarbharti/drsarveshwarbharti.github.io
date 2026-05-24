@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance - We'll Be Back Soon!</title>
+    <meta name="description" content="Our website is currently under maintenance. We'll be back soon with exciting updates!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Logo/Icon Section -->
+        <div class="logo-section">
+            <div class="construction-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Heading -->
+            <h1 class="main-heading">
+                <span class="gradient-text">We're Under</span>
+                <span class="highlight">Maintenance</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                Our website is currently undergoing scheduled maintenance. 
+                <br>
+                <span class="emphasis">We'll be back soon with exciting updates!</span>
+            </p>
+
+            <!-- Progress Bar -->
+            <div class="progress-section">
+                <div class="progress-text">
+                    <span>Progress</span>
+                    <span class="progress-percentage">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-glow"></div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-section">
+                <h3>Estimated Time Remaining</h3>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-value" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notify Me Section -->
+            <div class="notify-section">
+                <h3>Get Notified When We're Back</h3>
+                <form class="notify-form" id="notifyForm">
+                    <div class="input-group">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input 
+                            type="email" 
+                            id="emailInput" 
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="notify-btn">
+                            <span>Notify Me</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="form-message" id="formMessage"></div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+                <p>Stay connected with us</p>
+                <div class="social-links">
+                    <a href="#" class="social-link facebook" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link instagram" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link linkedin" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link youtube" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <p class="thank-you">
+                <i class="fas fa-heart heartbeat"></i>
+                Thank you for your patience!
+            </p>
+        </footer>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-icons">
+        <i class="fas fa-code floating-icon icon-1"></i>
+        <i class="fas fa-laptop-code floating-icon icon-2"></i>
+        <i class="fas fa-cog floating-icon icon-3"></i>
+        <i class="fas fa-wrench floating-icon icon-4"></i>
+        <i class="fas fa-hammer floating-icon icon-5"></i>
+    </div>
+
+    <!-- Mouse Follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
